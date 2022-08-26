@@ -10,7 +10,9 @@ from time import time as tt
 os.system("clear")
 
 print("""\033[91m
-
+\033[91m╔╦╗╦ ╦╔═╗╦╔═╗╔═╗╦  ╔═╗╔═╗╔═╗╔╦╗╔═╗
+\033[91m ║ ╚╦╝╠═╝║║  ╠═╣║  ║ ╦║ ║║ ║ ║║╚═╗
+\033[91m ╩  ╩ ╩  ╩╚═╝╩ ╩╩═╝╚═╝╚═╝╚═╝═╩╝╚═╝
 """)
 
 username = str(input("\033[93mUsername:"))
@@ -25,7 +27,9 @@ else:
 
 os.system("clear")
 print("""\033[91m
-
+\033[91m╔╦╗╦ ╦╔═╗╦╔═╗╔═╗╦  ╔═╗╔═╗╔═╗╔╦╗╔═╗
+\033[91m ║ ╚╦╝╠═╝║║  ╠═╣║  ║ ╦║ ║║ ║ ║║╚═╗
+\033[91m ╩  ╩ ╩  ╩╚═╝╩ ╩╩═╝╚═╝╚═╝╚═╝═╩╝╚═╝
 """)
 time.sleep(5)
 
@@ -68,7 +72,7 @@ def attack(ip, port, time, threads):
     if port is not None:
         port = max(1, min(65535, port))
     print(attacks)
-    print("\033[92m TYPICALGOODS.
+    print("\033[92m TYPICALGOODS.")
     fmt = '\033[91m  Typicalgoods Sent Ip {ip}, Port {port}'.format(
         ip=ip,
         port='port {port}'.format(port=port) if port else 'random ports'
